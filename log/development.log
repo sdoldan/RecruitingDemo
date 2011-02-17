@@ -1,0 +1,45 @@
+
+
+Started GET "/" for 127.0.0.1 at 2011-02-17 17:06:19 -0200
+  Processing by PagesController#index as HTML
+Redirected to http://localhost:3000/authorizations/oauth
+Completed 302 Found in 1ms
+
+
+Started GET "/authorizations/oauth" for 127.0.0.1 at 2011-02-17 17:06:20 -0200
+  Processing by AuthorizationsController#oauth as HTML
+Redirected to https://login.salesforce.com/services/oauth2/authorize?client_id=3MVG9zeKbAVObYjPWX7.1fNTRQweoQ2LPrwV7Xiqc5kwFLkkPbuyo9lI9fR7bCbB61nOZ5RTbG1m448xxJ65i&response_type=code&redirect_uri=https%3A%2F%2Fstickyforce.heroku.com%2Fauthorizations%2Fcallback&type=web_server
+Completed 302 Found in 23ms
+
+
+Started GET "/" for 127.0.0.1 at 2011-02-17 17:07:15 -0200
+  Processing by PagesController#index as HTML
+Redirected to http://localhost:3000/authorizations/oauth
+Completed 302 Found in 1ms
+
+
+Started GET "/authorizations/oauth" for 127.0.0.1 at 2011-02-17 17:07:16 -0200
+  Processing by AuthorizationsController#oauth as HTML
+Redirected to https://login.salesforce.com/services/oauth2/authorize?client_id=3MVG9zeKbAVObYjPWX7.1fNTRQweoQ2LPrwV7Xiqc5kwFLkkPbuyo9lI9fR7bCbB61nOZ5RTbG1m448xxJ65i&response_type=code&redirect_uri=http%3A%2F%2Flocalhost%3A3000%2Fauthorizations%2Fcallback&type=web_server
+Completed 302 Found in 23ms
+
+
+Started GET "/authorizations/callback?code=aPrxrw6IzDI.fzsoUOYshIOjwLVGm287EeLMjO_0in4MukWqrqh0tLYZtKUxMzFU0E39FfcyFg%3D%3D" for 127.0.0.1 at 2011-02-17 17:07:18 -0200
+  Processing by AuthorizationsController#callback as HTML
+  Parameters: {"code"=>"aPrxrw6IzDI.fzsoUOYshIOjwLVGm287EeLMjO_0in4MukWqrqh0tLYZtKUxMzFU0E39FfcyFg=="}
+Redirected to http://localhost:3000/
+Completed 302 Found in 2171ms
+
+
+Started GET "/" for 127.0.0.1 at 2011-02-17 17:07:21 -0200
+  Processing by PagesController#index as HTML
+Rendered pages/index.html.haml within layouts/application (3.3ms)
+Completed 200 OK in 10ms (Views: 9.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/javascripts/jquery.js" for 127.0.0.1 at 2011-02-17 17:07:21 -0200
+
+ActionController::RoutingError (No route matches "/javascripts/jquery.js"):
+  
+
+Rendered /home/sandant/.rvm/gems/ruby-1.9.2-p136/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.3ms)
