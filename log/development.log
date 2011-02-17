@@ -43,3 +43,34 @@ ActionController::RoutingError (No route matches "/javascripts/jquery.js"):
   
 
 Rendered /home/sandant/.rvm/gems/ruby-1.9.2-p136/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-02-17 17:34:44 -0200
+  Processing by PagesController#index as HTML
+Redirected to http://localhost:3000/authorizations/oauth
+Completed 302 Found in 1ms
+
+
+Started GET "/authorizations/oauth" for 127.0.0.1 at 2011-02-17 17:34:45 -0200
+  Processing by AuthorizationsController#oauth as HTML
+Redirected to https://login.salesforce.com/services/oauth2/authorize?client_id=3MVG9zeKbAVObYjPWX7.1fNTRQweoQ2LPrwV7Xiqc5kwFLkkPbuyo9lI9fR7bCbB61nOZ5RTbG1m448xxJ65i&response_type=code&redirect_uri=http%3A%2F%2Flocalhost%3A3000%2Fauthorizations%2Fcallback&type=web_server
+Completed 302 Found in 23ms
+
+
+Started GET "/authorizations/callback?code=aPrxrw6IzDI.fzsoUOYshIOjwBKdtUZPntuvL.1NnVHUARjAVyBdE3w79uxBt87Pp.hENpciBg%3D%3D" for 127.0.0.1 at 2011-02-17 17:34:51 -0200
+  Processing by AuthorizationsController#callback as HTML
+  Parameters: {"code"=>"aPrxrw6IzDI.fzsoUOYshIOjwBKdtUZPntuvL.1NnVHUARjAVyBdE3w79uxBt87Pp.hENpciBg=="}
+Redirected to http://localhost:3000/
+Completed 302 Found in 1727ms
+
+
+Started GET "/" for 127.0.0.1 at 2011-02-17 17:34:53 -0200
+  Processing by PagesController#index as HTML
+Rendered pages/index.html.haml within layouts/application (4.5ms)
+Completed 200 OK in 11ms (Views: 10.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-02-17 17:35:41 -0200
+  Processing by PagesController#index as HTML
+Rendered pages/index.html.haml within layouts/application (6.4ms)
+Completed 200 OK in 13ms (Views: 12.1ms | ActiveRecord: 0.0ms)
